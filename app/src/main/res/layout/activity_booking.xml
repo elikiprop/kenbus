@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    tools:context=".Booking">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        tools:layout_editor_absoluteX="-87dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/LogoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif"
+                android:text="Booking"
+                android:textColor="#039BE5"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                app:layout_constraintHorizontal_bias="0.64"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintBottom_toBottomOf="@+id/LogoText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/LogoText"
+
+                app:layout_constraintVertical_bias="0.771"
+                app:srcCompat="@drawable/baseline_directions_bus_24"
+                android:contentDescription="TODO" />
+
+            <EditText
+                android:id="@+id/inputPhone"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/shape"
+                android:drawableStart="@drawable/baseline_phone_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Phone_number"
+                android:inputType="phone"
+                android:maxLength="14"
+                android:padding="15dp"
+                android:textColorHint="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintHorizontal_bias="0.971"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+            <EditText
+                android:id="@+id/inputFullNames"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="52dp"
+                android:background="@drawable/shape"
+                android:drawableStart="@drawable/baseline_3p_24"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="Full_names"
+                android:inputType="textCapSentences"
+                android:padding="15dp"
+                android:textColorHint="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputPhone"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/Departure"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/shape"
+                android:drawableStart="@drawable/baseline_location_on_24"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="Departure"
+                android:inputType="textCapWords"
+                android:textColorHint="@color/white"
+                android:textSize="24sp"
+                android:padding="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/inputFullNames"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/inputFullNames"
+                app:layout_constraintTop_toBottomOf="@+id/inputFullNames"
+                android:autofillHints="OK" />
+
+            <EditText
+                android:id="@+id/Destination"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape"
+                android:drawableStart="@drawable/baseline_location_on_24"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="Destination"
+                android:inputType="textCapWords"
+                android:textColorHint="@color/white"
+                android:textSize="24sp"
+                android:padding="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/Departure"
+                app:layout_constraintHorizontal_bias="0.874"
+                app:layout_constraintStart_toStartOf="@+id/Departure"
+                app:layout_constraintTop_toBottomOf="@+id/Departure"
+                android:autofillHints="OK" />
+
+            <EditText
+                android:id="@+id/DepartureTime"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape"
+                android:drawableStart="@drawable/baseline_access_time_24"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="Departure Time"
+                android:padding="15dp"
+                android:inputType="datetime"
+                android:textColorHint="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/Destination"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/Destination"
+                app:layout_constraintTop_toBottomOf="@+id/Destination"
+                android:autofillHints="OK" />
+
+            <EditText
+                android:id="@+id/Date"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/shape"
+                android:drawableStart="@drawable/baseline_date_range_24"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="Date"
+                android:inputType="date"
+                android:padding="15dp"
+                android:textColorHint="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/DepartureTime"
+                app:layout_constraintStart_toStartOf="@+id/DepartureTime"
+                app:layout_constraintTop_toBottomOf="@+id/DepartureTime"
+                android:autofillHints="OK" />
+
+            <Button
+                android:id="@+id/Booking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/shape"
+                android:padding="15dp"
+                android:text="Book"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/Date"
+                app:layout_constraintStart_toStartOf="@+id/Date"
+                app:layout_constraintTop_toBottomOf="@+id/Date"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+          <!--  <TextView
+                android:id="@+id/Proceed"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/shape"
+                android:drawablePadding="15dp"
+                android:padding="15dp"
+                android:text=" Proceed To Payment"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/Booking"
+                app:layout_constraintStart_toStartOf="@+id/Booking"
+                app:layout_constraintTop_toBottomOf="@+id/Booking" /> -->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "978089059358",
+    "project_id": "kenbus-ae7e5",
+    "storage_bucket": "kenbus-ae7e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978089059358:android:a23b5354476e743e8e3a0f",
+        "android_client_info": {
+          "package_name": "com.example.kenbus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978089059358-003uj4i3ccpadjibngv7irgfc632plol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApZ2V5CfqZjQ2F8mSEMeID-R7Ex0VeHss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978089059358-003uj4i3ccpadjibngv7irgfc632plol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
